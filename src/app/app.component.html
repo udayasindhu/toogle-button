@@ -1,0 +1,14 @@
+<table border="1" [hidden]="showTable">
+  <tr *ngFor="let key of keys">
+    <th>
+      {{key | titlecase}}
+    </th>
+    <td>
+      {{emp[key]}}
+    </td>
+  </tr>
+</table>
+
+<button (click)="clicked()" id="click-me">
+  Click Me
+</button>
